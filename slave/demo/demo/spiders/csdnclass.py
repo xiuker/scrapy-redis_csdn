@@ -5,8 +5,7 @@ from scrapy_redis.spiders import RedisSpider
 
 class CsdnclassSpider(RedisSpider):
     name = 'csdnclass'
-    #allowed_domains = ['fang.5i5j.com']
-    #start_urls = ['https://fang.5i5j.com/bj/loupan/']
+    
     redis_key = "csdnspider:start_urls"
     print(redis_key)
     def __init__(self, *args, **kwargs):
